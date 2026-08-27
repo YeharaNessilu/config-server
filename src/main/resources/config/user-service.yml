@@ -4,9 +4,11 @@ server:
 spring:
   data:
     mongodb:
-      uri: mongodb://localhost:27017/user_db
+      uri: mongodb://libraryapp:6ZwTTpXAm6UAp4nnaOFFwWfr2015zs8ikqp0I686dy8y-ghu@ddb53618-2335-4259-b8bc-3ca5e99a8f6a.asia-southeast1.firestore.goog:443/user-db?loadBalanced=true&tls=true&authMechanism=SCRAM-SHA-256&retryWrites=false
 
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://10.10.0.3:8761/eureka/
+  instance:
+    prefer-ip-address: true
